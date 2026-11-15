@@ -13,6 +13,25 @@
 > **Course Code:** CSE-276 Capstone Project  
 > **Repository:** [rajoob-Ai/RESCUE-AI-AI-Based-Disaster-Shelter-Allocation-Emergency-Response-System](https://github.com/rajoob-Ai/RESCUE-AI-AI-Based-Disaster-Shelter-Allocation-Emergency-Response-System)
 
+---
+
+### 📦 Deliverables & Repository Alignment (University Specification)
+
+| # | Item | Directory / File | Description |
+|---|---|---|---|
+| **(1)** | **Project** | [`project/`](./project/) & Root Config | Environment templates (`.env.example`), batch scripts (`run-dev.bat`), and project architecture |
+| **(2)** | **Code** | [`code/`](./code/) (`frontend/` & `backend/`) | Complete Next.js 14 frontend and Python FastAPI constraint-satisfaction backend |
+| **(3)** | **Readme** | [`README.md`](./README.md) | Official documentation, installation manual, and system architecture guide |
+| **(4)** | **Requirements.txt** | [`requirements.txt`](./requirements.txt) | Root Python, OR-Tools, FastAPI, and machine learning dependencies |
+| **(5)** | **ppt** | [`ppt/`](./ppt/) & [`RESCUE_AI_PRESENTATION.pptx`](./RESCUE_AI_PRESENTATION.pptx) | Widescreen PowerPoint (`.pptx`), PDF (`.pdf`), and HTML slide deck |
+| **(6)** | **Report** | [`report/`](./report/) & [`RESCUE_AI_PROJECT_REPORT.pdf`](./RESCUE_AI_PROJECT_REPORT.pdf) | Official dissertation report in Times New Roman (16/14/12pt) with Declaration & Index |
+| **(7)** | **Folder** | Entire repository structure | Clean, structured root hierarchy conforming to university submission guidelines |
+
+> 🔗 **Official Project Link &rarr; GitHub:**  
+> **[https://github.com/rajoob-Ai/RESCUE-AI-AI-Based-Disaster-Shelter-Allocation-Emergency-Response-System](https://github.com/rajoob-Ai/RESCUE-AI-AI-Based-Disaster-Shelter-Allocation-Emergency-Response-System)**
+
+---
+
 **RESCUE AI** is an intelligent disaster-shelter allocation platform engineered for emergency management commanders. It coordinates the safe, optimal, and explainable allocation of displaced populations into emergency shelters while adhering to strict safety, capacity, medical, and accessibility constraints.
 
 ---
