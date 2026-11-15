@@ -43,7 +43,7 @@ jobs:
       - name: Add .nojekyll
         run: touch ./out/.nojekyll
 
-      - name: Deploy to GitHub Pages
+      - name: Push to gh-pages Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -53,3 +53,19 @@ jobs:
           force_orphan: false
           enable_jekyll: false
           commit_message: 'deploy: ${{ github.event.head_commit.message }}'
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./frontend/out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
