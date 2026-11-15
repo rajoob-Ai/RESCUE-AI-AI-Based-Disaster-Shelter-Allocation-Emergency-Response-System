@@ -1,7 +1,7 @@
 # 🚀 Project Directory — RESCUE AI Overview
 
 > **Capstone Dissertation Project (CSE-276)**  
-> **Author:** Kovuru Rajoob (Reg: 12506537, Roll: 23, B.Tech CSE - AIML)  
+> **Author:** Kovuru Rajoob (Reg: 12506537, Roll: 53, B.Tech CSE - AIML)  
 > **Supervisor:** Ayushi Bhakuni (Assistant Professor, Dept. of CSE)  
 > **Institution:** Lovely Professional University, Phagwara  
 
