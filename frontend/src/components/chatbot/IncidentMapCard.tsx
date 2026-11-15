@@ -10,6 +10,7 @@ interface Props {
 
 export default function IncidentMapCard({ incident }: Props) {
   const [isExpanded, setIsExpanded] = useState(false)
+  const [viewEngine, setViewEngine] = useState<'osm' | 'google'>('google')
   const isShelter = incident.type === 'shelter'
 
   const badgeColor =
@@ -21,6 +22,7 @@ export default function IncidentMapCard({ incident }: Props) {
   // OpenStreetMap embed URL with calibrated bounding box around incident coordinates
   const zoomSpan = incident.radiusKm ? Math.max(incident.radiusKm * 0.02, 0.08) : 0.06
   const osmUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${incident.lng - zoomSpan}%2C${incident.lat - (zoomSpan * 0.7)}%2C${incident.lng + zoomSpan}%2C${incident.lat + (zoomSpan * 0.7)}&layer=mapnik&marker=${incident.lat}%2C${incident.lng}`
+  const gmapUrl = `https://www.google.com/maps?q=${incident.lat},${incident.lng}&z=12&output=embed`
 
   return (
     <div className={`mt-3 bg-white border border-slate-200 rounded-2xl shadow-md overflow-hidden text-slate-800 transition-all duration-300 ${
@@ -41,6 +43,26 @@ export default function IncidentMapCard({ incident }: Props) {
         </div>
 
         <div className="flex items-center gap-2">
+          {/* Engine toggle pill */}
+          <div className="flex items-center bg-slate-200/80 p-0.5 rounded-lg text-[10px] font-semibold">
+            <button
+              onClick={() => setViewEngine('google')}
+              className={`px-2 py-0.5 rounded-md transition ${
+                viewEngine === 'google' ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              Google Map
+            </button>
+            <button
+              onClick={() => setViewEngine('osm')}
+              className={`px-2 py-0.5 rounded-md transition ${
+                viewEngine === 'osm' ? 'bg-blue-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              OSM
+            </button>
+          </div>
+
           <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase shadow-xs ${badgeColor}`}>
             {incident.severity}
           </span>
@@ -66,7 +88,7 @@ export default function IncidentMapCard({ incident }: Props) {
           scrolling="no"
           marginHeight={0}
           marginWidth={0}
-          src={osmUrl}
+          src={viewEngine === 'google' ? gmapUrl : osmUrl}
           className="w-full h-full border-0"
           loading="lazy"
         />
@@ -79,10 +101,20 @@ export default function IncidentMapCard({ incident }: Props) {
           </div>
         )}
 
-        {/* Center Target Indicator */}
-        <div className="absolute bottom-3 right-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-lg text-[10px] font-mono font-semibold text-slate-700 shadow-md border border-slate-200 pointer-events-none flex items-center gap-1">
-          <Compass className="w-3.5 h-3.5 text-rescue-blue" />
-          <span>Active Centroid</span>
+        {/* Center Target Indicator & Direct Google Link */}
+        <div className="absolute bottom-3 right-3 flex items-center gap-1.5">
+          <div className="bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-lg text-[10px] font-mono font-semibold text-slate-700 shadow-md border border-slate-200 pointer-events-none flex items-center gap-1">
+            <Compass className="w-3.5 h-3.5 text-rescue-blue" />
+            <span>Active Centroid</span>
+          </div>
+          <a
+            href={`https://www.google.com/maps/search/?api=1&query=${incident.lat},${incident.lng}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/95 hover:bg-white backdrop-blur-md px-2.5 py-1 rounded-lg text-[10px] font-semibold text-blue-700 shadow-md border border-slate-200 flex items-center gap-1 transition"
+          >
+            <span>Google Maps ↗</span>
+          </a>
         </div>
       </div>
 

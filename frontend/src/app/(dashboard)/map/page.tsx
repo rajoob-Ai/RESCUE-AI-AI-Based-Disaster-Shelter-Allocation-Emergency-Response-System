@@ -20,6 +20,18 @@ const DisasterMap = dynamic(() => import('@/components/map/DisasterMap'), {
   ),
 })
 
+const GoogleDisasterMap = dynamic(() => import('@/components/map/GoogleDisasterMap'), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full min-h-[640px] flex items-center justify-center bg-slate-900 text-slate-300">
+      <div className="text-center">
+        <div className="w-12 h-12 border-3 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+        <p className="text-sm font-semibold">Loading Google Maps API Engine...</p>
+      </div>
+    </div>
+  ),
+})
+
 const STAT_CARDS = [
   {
     label: 'Active Disasters', value: ALL_OPERATIONS.disasters.length,
@@ -69,6 +81,7 @@ const SEV_CLASS: Record<string, string> = {
 
 export default function MapPage() {
   const [refreshKey, setRefreshKey] = useState(0)
+  const [mapEngine, setMapEngine] = useState<'leaflet' | 'google'>('leaflet')
 
   return (
     <div className="flex flex-col h-full bg-[#F0F4F8]">
@@ -87,10 +100,35 @@ export default function MapPage() {
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            
+            {/* Map Engine Toggle: Leaflet OSM vs Google Maps API */}
+            <div className="flex items-center bg-black/30 p-1 rounded-xl border border-white/20 backdrop-blur-md">
+              <button
+                onClick={() => setMapEngine('leaflet')}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
+                  mapEngine === 'leaflet'
+                    ? 'bg-blue-600 text-white shadow-md'
+                    : 'text-blue-200 hover:text-white'
+                }`}
+              >
+                <span>🗺️ Leaflet / OSM</span>
+              </button>
+              <button
+                onClick={() => setMapEngine('google')}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
+                  mapEngine === 'google'
+                    ? 'bg-emerald-600 text-white shadow-md'
+                    : 'text-blue-200 hover:text-white'
+                }`}
+              >
+                <span>🛰️ Google Maps API</span>
+              </button>
+            </div>
+
             <div className="flex items-center gap-1.5 bg-emerald-500/20 text-emerald-300 text-xs px-3 py-1.5 rounded-full border border-emerald-500/30 font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              NDMA Active Operations Feed
+              NDMA Active Feed
             </div>
             <button
               onClick={() => setRefreshKey(k => k + 1)}
@@ -122,12 +160,21 @@ export default function MapPage() {
 
       {/* ── MAIN MAP (Full Frame) ────────────────────────────── */}
       <div className="flex-1 relative min-h-[540px] overflow-hidden">
-        <DisasterMap
-          key={refreshKey}
-          shelterMarkers={[]}
-          disasterZones={[]}
-          evacuationRoutes={[]}
-        />
+        {mapEngine === 'leaflet' ? (
+          <DisasterMap
+            key={`leaflet-${refreshKey}`}
+            shelterMarkers={[]}
+            disasterZones={[]}
+            evacuationRoutes={[]}
+          />
+        ) : (
+          <GoogleDisasterMap
+            key={`google-${refreshKey}`}
+            shelterMarkers={ALL_OPERATIONS.shelters}
+            disasterZones={ALL_OPERATIONS.disasters}
+            evacuationRoutes={ALL_OPERATIONS.routes}
+          />
+        )}
       </div>
 
       {/* ── LEGEND + OPERATIONS TABLE ────────────────────────── */}
