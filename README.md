@@ -7,7 +7,7 @@
 
 
 > **Academic Capstone Project | Department of Computer Science & Engineering**  
-> **Student Author:** **Kovuru Rajoob** (Reg. No: 12506537, Roll: 23, B.Tech CSE - AIML)  
+> **Student Author:** **Kovuru Rajoob** (Reg. No: 12506537, Roll: 53, B.Tech CSE - AIML)  
 > **Project Supervisor:** **Ayushi Bhakuni** (Assistant Professor, Dept. of CSE)  
 > **Institution:** Lovely Professional University, Phagwara  
 > **Course Code:** CSE-276 Capstone Project  
