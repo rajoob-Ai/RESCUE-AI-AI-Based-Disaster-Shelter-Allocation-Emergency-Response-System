@@ -186,7 +186,7 @@ In accordance with academic capstone submission guidelines, this repository prov
 
 ## 👥 Authorship & Academic Credits
 
-- **Candidate:** **Kovuru Rajoob** (Registration No: 12506537, Roll: 23)
+- **Candidate:** **Kovuru Rajoob** (Registration No: 12506537, Roll: 53)
 - **Faculty Guide:** **Ayushi Bhakuni** (Assistant Professor, Department of Computer Science & Engineering)
 - **Institution:** Lovely Professional University, Phagwara, Punjab
 - **Session:** 2026–2027
