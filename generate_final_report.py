@@ -217,7 +217,7 @@ html_content = """<!DOCTYPE html>
       <div style="text-align: left;">
         <span style="font-size: 11pt; color: #555;">Submitted by:</span><br>
         <strong>KOVURU RAJOOB</strong><br>
-        Registration No: 12506537<br>
+        Registration No: 12505486<br>
         Roll No: 53<br>
         Course Code: CSE-276
       </div>
@@ -266,7 +266,8 @@ html_content = """<!DOCTYPE html>
     <div class="signature-box">
       <div class="sign-line"></div>
       <strong>KOVURU RAJOOB</strong><br>
-      Registration No: 12506537<br>
+      Registration No: 12505486<br>
+      Roll No: 53<br>
       B.Tech CSE (AIML), LPU
     </div>
   </div>
@@ -277,7 +278,7 @@ html_content = """<!DOCTYPE html>
   <div>
     <h1 class="chapter-title">Certificate of Approval</h1>
 
-    <p>This is to certify that the capstone project report entitled <strong>"RESCUE AI: AI-Based Disaster Shelter Allocation &amp; Emergency Response System"</strong> submitted by <strong>KOVURU RAJOOB</strong> (Registration No: <strong>12506537</strong>) in partial fulfillment of the requirements for the degree of <strong>Bachelor of Technology in Computer Science &amp; Engineering</strong> from Lovely Professional University, Phagwara, is a record of original and authentic work carried out under my supervision and guidance.</p>
+    <p>This is to certify that the capstone project report entitled <strong>"RESCUE AI: AI-Based Disaster Shelter Allocation &amp; Emergency Response System"</strong> submitted by <strong>KOVURU RAJOOB</strong> (Registration No: <strong>12505486</strong>, Roll No: <strong>53</strong>) in partial fulfillment of the requirements for the degree of <strong>Bachelor of Technology in Computer Science &amp; Engineering</strong> from Lovely Professional University, Phagwara, Punjab, is a record of original and authentic work carried out under my supervision and guidance.</p>
 
     <p>To the best of my knowledge and belief, the thesis embodies the candidate's own work and meets all required academic standards and rigorous university specifications for final capstone submission.</p>
 

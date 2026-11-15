@@ -137,7 +137,7 @@ ip2.font.color.rgb = SKY_BLUE
 ip2.alignment = PP_ALIGN.CENTER
 
 ip3 = itf.add_paragraph()
-ip3.text = "B.Tech Computer Science & Engineering (AIML) | Lovely Professional University"
+ip3.text = "Registration No: 12505486 | Roll No: 53 | Place: Punjab\nB.Tech Computer Science & Engineering (AIML) | Lovely Professional University"
 ip3.font.size = Pt(13)
 ip3.font.color.rgb = LIGHT_GRAY
 ip3.alignment = PP_ALIGN.CENTER
@@ -186,7 +186,7 @@ dp2.font.color.rgb = LIGHT_GRAY
 dp2.space_after = Pt(20)
 
 dp3 = dtf.add_paragraph()
-dp3.text = "Candidate: Kovuru Rajoob\nCourse Code: CSE-276 / B.Tech CSE (AIML)\nInstitution: Lovely Professional University, Phagwara"
+dp3.text = "Candidate: Kovuru Rajoob | Registration No: 12505486 | Roll No: 53\nPlace: Punjab | Course Code: CSE-276 / B.Tech CSE (AIML)\nInstitution: Lovely Professional University, Phagwara"
 dp3.font.size = Pt(13)
 dp3.font.color.rgb = SKY_BLUE
 

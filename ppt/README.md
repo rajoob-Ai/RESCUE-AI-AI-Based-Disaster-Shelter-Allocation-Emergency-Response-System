@@ -1,5 +1,8 @@
 # 📊 Presentation Directory — RESCUE AI (PPT)
 
+> **Candidate:** Kovuru Rajoob &nbsp;|&nbsp; **Registration No:** 12505486 &nbsp;|&nbsp; **Roll No:** 53 &nbsp;|&nbsp; **Place:** Punjab  
+> **Supervisor:** Ayushi Bhakuni (Assistant Professor, Dept. of CSE, Lovely Professional University, Punjab)  
+
 This directory houses the official academic defense presentation slides for **RESCUE AI**:
 
 ---

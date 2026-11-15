@@ -7,9 +7,9 @@
 
 
 > **Academic Capstone Project | Department of Computer Science & Engineering**  
-> **Student Author:** **Kovuru Rajoob** (Reg. No: 12506537, Roll: 53, B.Tech CSE - AIML)  
+> **Student Author:** **Kovuru Rajoob** (Reg. No: 12505486, Roll: 53, Place: Punjab, B.Tech CSE - AIML)  
 > **Project Supervisor:** **Ayushi Bhakuni** (Assistant Professor, Dept. of CSE)  
-> **Institution:** Lovely Professional University, Phagwara  
+> **Institution:** Lovely Professional University, Phagwara, Punjab  
 > **Course Code:** CSE-276 Capstone Project  
 > **Repository:** [rajoob-Ai/RESCUE-AI-AI-Based-Disaster-Shelter-Allocation-Emergency-Response-System](https://github.com/rajoob-Ai/RESCUE-AI-AI-Based-Disaster-Shelter-Allocation-Emergency-Response-System)
 
@@ -205,7 +205,7 @@ In accordance with academic capstone submission guidelines, this repository prov
 
 ## 👥 Authorship & Academic Credits
 
-- **Candidate:** **Kovuru Rajoob** (Registration No: 12506537, Roll: 53)
+- **Candidate:** **Kovuru Rajoob** (Registration No: 12505486, Roll: 53, Place: Punjab)
 - **Faculty Guide:** **Ayushi Bhakuni** (Assistant Professor, Department of Computer Science & Engineering)
 - **Institution:** Lovely Professional University, Phagwara, Punjab
 - **Session:** 2026–2027

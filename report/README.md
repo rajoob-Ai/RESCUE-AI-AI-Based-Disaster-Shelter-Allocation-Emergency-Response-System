@@ -2,6 +2,9 @@
 
 This directory contains the official capstone dissertation and project report for **RESCUE AI – AI-Based Disaster Shelter Allocation & Emergency Response System**, strictly conforming to the formatting guidelines:
 
+> **Candidate:** Kovuru Rajoob &nbsp;|&nbsp; **Registration No:** 12505486 &nbsp;|&nbsp; **Roll No:** 53 &nbsp;|&nbsp; **Place:** Punjab  
+> **Faculty Guide:** Ayushi Bhakuni (Assistant Professor, Dept. of CSE, Lovely Professional University, Punjab)  
+
 ---
 
 ## 📐 Formatting Specifications Applied

@@ -19,7 +19,7 @@
 
                                              Submitted by:
                                        KOVURU RAJOOB
-                                    Register / Roll No: 2022-CSE-RESCUE-01
+                                    Register / Roll No: 12505486 /53
 
                                     Under the Esteemed Guidance of:
                                        AYUSHI BHAKUNI
@@ -45,13 +45,13 @@ I further declare that:
 
 \
 **Date:** 14th November 2026  
-**Place:** Chennai, India  
+**Place:** punjab, India  
 \
 \
 _______________________________________  
 **(Signature of the Candidate)**  
 **KOVURU RAJOOB**  
-Roll No: 2022-CSE-RESCUE-01  
+Roll No: 53
 
 ---
 

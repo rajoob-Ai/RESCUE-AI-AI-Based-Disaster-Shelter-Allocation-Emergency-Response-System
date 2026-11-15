@@ -1,5 +1,8 @@
 # 💻 Code Directory — RESCUE AI System Architecture
 
+> **Candidate:** Kovuru Rajoob &nbsp;|&nbsp; **Registration No:** 12505486 &nbsp;|&nbsp; **Roll No:** 53 &nbsp;|&nbsp; **Place:** Punjab  
+> **Supervisor:** Ayushi Bhakuni (Assistant Professor, Dept. of CSE, Lovely Professional University, Punjab)  
+
 This directory provides direct links and structural documentation for the full-stack codebase of **RESCUE AI – AI-Based Disaster Shelter Allocation & Emergency Response System**.
 
 ---
