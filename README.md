@@ -167,8 +167,8 @@ In accordance with academic capstone submission guidelines, this repository prov
 
 1. **Project**: Production disaster management & shelter allocation platform.
 2. **Code**: 
-   - rontend/: Next.js 14 App Router, TypeScript, Tailwind CSS, Leaflet.js (15 routes).
-   - ackend/: FastAPI, SQLAlchemy, Google OR-Tools CP-SAT, Multi-Agent Orchestrator.
+   - `frontend/`: Next.js 14 App Router, TypeScript, Tailwind CSS, Leaflet.js (15 routes).
+   - `backend/`: FastAPI, SQLAlchemy, Google OR-Tools CP-SAT, Multi-Agent Orchestrator.
 3. **README.md**: Complete technical documentation, setup instructions, and architecture guide.
 4. **requirements.txt**: Root-level and backend dependencies specification.
 5. **PPT (Presentation)**:
